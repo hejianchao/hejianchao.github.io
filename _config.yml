@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://github.com/hejianchao/hejianchao.github.io
+url: https://github.com/hejianchao/hejianchao.github.io
 date_format: "ordinal"
 title: 记录
 subtitle: "记录"
