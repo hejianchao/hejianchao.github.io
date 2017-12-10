@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-description: 改变
+description: 记录
 keywords: hejianchao, 何健超
 comments: true
 menu: 关于

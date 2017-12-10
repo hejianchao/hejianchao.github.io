@@ -2,15 +2,15 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://github.com/hejianchao/hejianchao.github.io
+url: https://github.com/
 date_format: "ordinal"
-title: 码志
-subtitle: "打码改变人生"
+title: 记录
+subtitle: "记录"
 description: "何健超的个人博客"
 keywords: hejianchao, 何健超
 timezone: Asia/Shanghai
 encoding: "utf-8"
-side_bar_repo_limit: 5
+side_bar_repo_limit: 8
 
 # ---------------- #
 #      Author      #
