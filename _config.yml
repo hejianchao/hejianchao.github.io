@@ -10,7 +10,7 @@ description: "何健超的个人博客"
 keywords: hejianchao, 何健超
 timezone: Asia/Shanghai
 encoding: "utf-8"
-side_bar_repo_limit: 8
+side_bar_repo_limit: 5
 
 # ---------------- #
 #      Author      #
