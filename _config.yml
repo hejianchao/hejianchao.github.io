@@ -90,7 +90,7 @@ disqus:
 # https://imsun.net/posts/gitment-introduction/
 gitment:
     owner: hejianchao
-    repo: hejianchao
+    repo: hejianchao.github.io
     oauth:
         client_id: bb57574aa606fff2b1a9
         client_secret: e8bec746bfc263a7fc682de01f01d93284b118a7
