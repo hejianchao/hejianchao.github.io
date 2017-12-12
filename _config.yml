@@ -7,7 +7,7 @@ date_format: "ordinal"
 title: 记录
 subtitle: "思考与总结"
 description: "何健超的个人博客"
-keywords: hejianchao, 何健超
+keywords: hejianchao, hjc, 何健超
 timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
@@ -15,7 +15,7 @@ side_bar_repo_limit: 5
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: hejianchao
+author: 何健超
 github_username: hejianchao
 location: Hangzhou, China
 email: hejianchao.1989@gmail.com
@@ -90,7 +90,7 @@ disqus:
 # https://imsun.net/posts/gitment-introduction/
 gitment:
     owner: hejianchao
-    repo: blog-comments
+    repo: my_blog
     oauth:
         client_id: 985274c38f4e097a5115
         client_secret: 8101d591c5ff68fac5a3da87bb114a0a77e14ec0
