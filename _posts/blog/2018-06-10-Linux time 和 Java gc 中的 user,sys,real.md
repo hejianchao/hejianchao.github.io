@@ -6,8 +6,6 @@ description: Linux time 和 Java gc 中的 real,user,sys
 keywords: Linux time 和 Java gc 中的 real,user,sys
 ---
 
-### Linux time 和 Java gc 中的 real,user,sys
-
 #### 1. Linux time 中的 real,user,sys
 在 Linux 服务器上输入命令 `time sleep 2` 可以得到类似如下的输出：
 ![linux-time-sleep](/images/blog/linux-time-sleep.png)
@@ -22,7 +20,7 @@ keywords: Linux time 和 Java gc 中的 real,user,sys
 
 * sys：表示程序运行过程中在*内核态*的 cpu 耗时。同样的，如果是多核 cpu，要把每个 cpu 在*内核态*上服务这个程序的耗时累加起来。
 
-从命令 `time sleep 2` 的输出可以看到，该程序（只需要单个 cpu 运行）此次执行的 real 耗时为 2.001s，sys 耗时为 0.001s。注意：这里的 
+从命令 `time sleep 2` 的输出可以看到，该程序（只需要单个 cpu 运行）此次执行的 real 耗时为 2.001s，sys 耗时为 0.001s。注意：这里的
 real 刚好等于 user + sys，这只是巧合，不能误以为所有地方都有这个等式关系。
 
 #### 2. Java gc 中的 real,user,sys
@@ -42,9 +40,9 @@ real 刚好等于 user + sys，这只是巧合，不能误以为所有地方都�
         如果多核中很多核被其他进程使用，本进程就不得不等待 CPU 的时间片，这个时间会体现在 real 上。
     - IO 是否过重
         IO 可能是本程序引起的，也可能是别的进程导致的
-    
+
 * sys > user
-    在 Java gc 中较罕见，因为一般地，在一个 gc 事件中大多数事件是花费在 jvm 代码上（用户态），而只有少量时间是在内核态。但是如果多次注意到 
+    在 Java gc 中较罕见，因为一般地，在一个 gc 事件中大多数事件是花费在 jvm 代码上（用户态），而只有少量时间是在内核态。但是如果多次注意到
     sys > user 的情况，重点注意如下情况：
     - 操作系统的问题
         排查操作系统的 cpu/mem 使用情况，有无 page faults, cpu 过高占用等情况。
